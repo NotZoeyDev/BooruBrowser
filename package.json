@@ -1,0 +1,42 @@
+{
+	"name": "boorubrowser",
+	"version": "1.0.0",
+	"description": "A small browser for all your favorite booru-like website.",
+	"author": {
+		"email": "zoey@panties.moe",
+		"name": "Zoey",
+		"url": "https://panties.moe"
+	},
+	"license": "MIT",
+	"main": "src/main.js",
+	"scripts": {
+		"start": "electron .",
+		"dist": "electron-builder",
+		"dist-win": "electron-builder --win",
+		"dist-linux": "electron-builder --linux",
+		"dist-mac": "electron-builder --mac",
+		"dist-all": "electron-builder -mwl"
+	},
+	"devDependencies": {
+		"electron": "^3.0.10",
+		"electron-builder": "^20.21.2"
+	},
+	"dependencies": {
+		"request": "^2.87.0"
+	},
+	"build": {
+		"appId": "panties.moe.boorubrowser",
+		"productName": "BooruBrowser",
+		"win": {
+			"target": ["nsis", "7z"]
+		},
+		"linux": {
+			"category": "Network",
+			"target": ["AppImage", "7z"]
+		},
+		"mac": {
+			"category": "public.app-category.utilities",
+			"target": ["dmg", "7z"]
+		}
+	}
+}
