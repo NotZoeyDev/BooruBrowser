@@ -1,7 +1,7 @@
-/*
-    Gelbooru support
-    By Zoey Désautels
-*/
+/**
+ * Gelbooru support
+ * By @ZoeyLovesMiki, 2019
+ */
 
 let Booru = require('./Booru.js');
 

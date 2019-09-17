@@ -1,7 +1,7 @@
-/*
-    Lil notification box
-    By Zoey Désautels
-*/
+/**
+ * Notification box component
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class NotificationBox {
     constructor() {

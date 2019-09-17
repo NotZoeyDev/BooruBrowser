@@ -1,7 +1,7 @@
-/*
-    Browser main code
-    By Zoey Désautels
-*/
+/**
+ * All the code are loaded as components, really bad code tbh
+ * By: @ZoeyLovesMiki, 2019 
+ */
 
 // Imports
 const path = require('path'), fs = require('fs'), request = require('request');
@@ -12,7 +12,6 @@ const {Menu, MenuItem, dialog} = remote;
 const Danbooru = new (require('./boorus/Danbooru.js'));
 const Gelbooru = new (require('./boorus/Gelbooru.js'));
 const Derpibooru = new (require('./boorus/Derpibooru.js'));
-//let selectedBooru = Gelbooru;
 
 // Components
 const SearchBar = new (require('./components/SearchBar.js'));

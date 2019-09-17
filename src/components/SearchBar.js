@@ -1,7 +1,7 @@
-/*
-    Everything related to the search bar
-    By Zoey Désautels
-*/
+/**
+ * Search bar component
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class SearchBar {
     constructor() {

@@ -1,7 +1,7 @@
-/*
-    Handles the booru selection thingy
-    By Zoey Désautels
-*/
+/**
+ * Selector component to choose what booru to use
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class BoorusSelect {
     constructor() {

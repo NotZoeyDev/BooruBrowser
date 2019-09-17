@@ -1,7 +1,7 @@
-/*
-    Handles loading images basically
-    By Zoey Désautels
-*/
+/**
+ * Handles loading images
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class ImagesArea {
     constructor() {

@@ -1,7 +1,7 @@
-/*
-    Main component
-    By Zoey Désautels
-*/
+/**
+ * Browser thingy
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class Browser {
     constructor() {

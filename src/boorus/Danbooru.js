@@ -1,7 +1,7 @@
-/*
-    Danbooru support
-    By Zoey Désautels
-*/
+/**
+ * Danbooru support
+ * By: @ZoeyLovesMiki, 2019
+ */
 
 let Booru = require('./Booru.js');
 

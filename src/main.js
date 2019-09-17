@@ -1,31 +1,35 @@
-/*
-    Electron app entrypoint
-    By Zoey Désautels
-*/
+/**
+ * Electron's app entrypoint
+ * By: @ZoeyLovesMiki, 2019
+ */
 
+// Electron imports
 const {BrowserWindow, app} = require('electron');
 
-let MainWindow;
+// Our Electron window
+let window;
 
 app.on('ready', () => {
-    MainWindow = new BrowserWindow({
+    window = new BrowserWindow({
         webPreferences: {
-            devTools: true
+            devTools: true,
+            nodeIntegration: true
         },
         show: false,
         title: "BooruBrowser",
         backgroundColor: "#212121"
     });
 
-    MainWindow.loadFile("src/browser.html");
-    MainWindow.setMenu(null);
-    MainWindow.on('ready-to-show', () => {
-        MainWindow.show();
-        MainWindow.webContents.openDevTools();
+    window.loadFile("src/browser.html");
+    
+    window.setMenu(null);
+
+    window.on('ready-to-show', () => {
+        window.show();
     });
 });
 
 app.on('window-all-closed', () => {
-    MainWindow = null;
+    window = null;
     app.exit(0);
 });

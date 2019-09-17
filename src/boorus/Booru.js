@@ -1,7 +1,7 @@
-/*
-    Main Booru object
-    By Zoey Désautels
-*/
+/**
+ * Booru class
+ * By: @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class Booru {
     constructor(baseURL) {
@@ -12,7 +12,7 @@ module.exports = class Booru {
     getPostsJSON(endpoint, callback) {
         request(`${this.BASE_URL}${endpoint}`, {
             headers: {
-                'User-Agent': 'BooruBrowser (by Zoey Désautels)'
+                'User-Agent': 'BooruBrowser (by @ZoeyLovesMiki)'
             }
         }, (err, res, body) => {
             if(err) callback(null) 

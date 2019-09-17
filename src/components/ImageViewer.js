@@ -1,7 +1,7 @@
-/*
-    The image viewer thingy
-    By Zoey Désautels
-*/
+/**
+ * Image gallery/viewer component
+ * By @ZoeyLovesMiki, 2019
+ */
 
 module.exports = class ImageViewer {
     constructor() {

@@ -1,7 +1,7 @@
-/*
-    Derpibooru support
-    By Zoey Désautels
-*/
+/**
+ * Derpibooru Support
+ * By: @ZoeyLovesMiki
+ */
 
 let Booru = require('./Booru.js');
 
